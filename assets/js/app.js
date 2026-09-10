@@ -21,7 +21,6 @@ let movieArr = [
         movieId: "1",
         movieName: "RRR",
         movieImg: "https://www.impawards.com/intl/india/2022/posters/rrr.jpg",
-        defaultImg: 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg',
         movieRating: 3.4,
         movieDescription: "RRR is an epic action drama about two revolutionaries who come together to fight against British rule. Their friendship and courage form the heart of this powerful story."
     },
@@ -30,7 +29,6 @@ let movieArr = [
         movieId: "2",
         movieName: "Kantara",
         movieImg: "https://www.impawards.com/intl/india/2022/posters/kantara.jpg",
-        defaultImg: 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg',
         movieRating: 6.8,
         movieDescription: "Kantara is a gripping story about a village, its traditions, and the deep connection between its people and the land. ."
     },
@@ -39,7 +37,6 @@ let movieArr = [
         movieId: "3",
         movieName: "Vikram",
         movieImg: "https://www.impawards.com/intl/india/2022/posters/vikram.jpg",
-        defaultImg: 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg',
         movieRating: 5.4,
         movieDescription: "A mysterious investigation leads a special team into the dangerous world of drugs and organized crime. As the investigation continues, hidden identities and secrets begin to surface."
     },
@@ -48,7 +45,6 @@ let movieArr = [
         movieId: "4",
         movieName: "Sita Ramam",
         movieImg: "https://www.impawards.com/intl/india/2022/posters/sita_ramam.jpg",
-        defaultImg: 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg',
         movieRating: 2.7,
         movieDescription: "Sita Ramam is a beautiful romantic drama about Lieutenant Ram, an army officer who receives an unexpected letter from a woman named Sita. ."
     },
@@ -57,7 +53,6 @@ let movieArr = [
         movieId: "5",
         movieName: "KGF: Chapter 1",
         movieImg: "https://www.impawards.com/intl/india/2018/posters/kgf.jpg",
-        defaultImg: 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg',
         movieRating: 4.7,
         movieDescription: "Rocky is a young man who grows up in poverty but dreams of becoming the most powerful person in the world. His journey takes him into the dangerous Kolar Gold Fields, where he challenges a powerful criminal empire. With determination and courage, Rocky begins building his own reputation and fighting against the people who control the mines."
     },
@@ -66,7 +61,6 @@ let movieArr = [
         movieId: "6",
         movieName: "Baahubali: The Beginning",
         movieImg: "https://www.impawards.com/intl/india/2015/posters/baahubali_the_beginning.jpg",
-        defaultImg: 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg',
         movieRating: 8.0,
         movieDescription: "Baahubali follows Shivudu, a young man who grows up unaware of his royal heritage. After discovering the truth about his family"
     }
@@ -254,6 +248,7 @@ function onEdit(ele) {
 function onUpdate() {
     let updateId = localStorage.getItem('updateid')
     // cl(updateId)
+    localStorage.removeItem('updateid')
 
     let updateMovie = {
         movieId: updateId,
