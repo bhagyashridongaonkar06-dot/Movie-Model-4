@@ -1,0 +1,138 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color :rgb(229,9,20);
+    --primary-hover-color :rgb(193, 17, 25);
+    --secondary-color :  #212529;
+    --color-white : #fff;
+}
+
+
+.pri-btn{
+    background-color: var(--primary-color);
+    color : var(--color-white)!important
+}
+
+.pri-btn:hover{
+    background-color: var(--primary-hover-color);
+}
+
+.sec-btn{
+    background-color:var(--secondary-color);
+    color: var(--color-white);
+}
+
+.sec-btn:hover{
+    background-color: var(--secondary-color);
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+}
+
+.netflixLogo{
+    width : 150px;
+}
+
+body::before{
+    content: '';
+    background-image: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.85) 3%,
+      rgba(0, 0, 0, 0.8465) 11.08%,
+      rgba(0, 0, 0, 0.8361) 19.17%,
+      rgba(0, 0, 0, 0.8187) 27.25%,
+      rgba(0, 0, 0, 0.7944) 35.33%,
+      rgba(0, 0, 0, 0.7632) 43.42%,
+      rgba(0, 0, 0, 0.725) 51.5%,
+      rgba(0, 0, 0, 0.6868) 59.58%,
+      rgba(0, 0, 0, 0.6556) 67.67%,
+      rgba(0, 0, 0, 0.6313) 75.75%,
+      rgba(0, 0, 0, 0.6139) 83.83%,
+      rgba(0, 0, 0, 0.6035) 91.92%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),url('../images/backimg.jpeg')
+	;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width : 100%;
+    position: absolute;
+    filter: blur(1.5px);
+}
+.movieCard{
+    height: 420px;
+}
+
+.movieCard:hover{
+    transform: scale(1.03);
+}
+.movieCard h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.movieCard figure{
+    height : 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.movieCard img{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+
+figcaption{
+    height: 60%;
+    width: 100%;
+    top: 40%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #212529;
+    opacity: .8;
+    overflow: auto;
+    transform: translateY(110%) scale(0);
+    transition: all ease-in-out 0.7s;
+}
+
+.movieCard:hover figcaption, .movieCard:active figcaption, .movieCard:focus figcaption{
+    transform: translateY(0) scale(1) ;
+}
+
+.movieForm{
+    width: 60%;
+    top: 10%;
+    left: 20%;
+    position: absolute;
+    display: none;
+}
+
+.movieForm.active{
+    display: block;
+}
+
+.backDrop{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: .8;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+}
+
+.backDrop.active{
+    display: block;
+}
