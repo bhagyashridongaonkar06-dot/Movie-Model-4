@@ -129,7 +129,7 @@ formClose.forEach(e => e.addEventListener('click', onToggleBtn))
 
 //default Image for movieCard
 
-// let defaultImg = 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg'
+let defaultImg = 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg'
 
 
 //Templating
@@ -151,7 +151,7 @@ function onCreateMovieCard(arr) {
                     </div>
                     <div class="card-body p-0 px-2">
                         <figure class="p-0 py-0">
-                            <img src="${ele.movieImg || ele.defaultImg}"
+                            <img src="${ele.movieImg || defaultImg}"
                                 alt="${ele.movieName}">
 
                             <figcaption>
@@ -207,7 +207,7 @@ function onSubmit(eve) {
                     </div>
                     <div class="card-body p-0 px-2">
                         <figure class="p-0 py-0">
-                            <img src="${newCard.movieImg || newCard.defaultImg}"
+                            <img src="${newCard.movieImg || defaultImg}"
                                 alt="${newCard.movieName}">
 
                             <figcaption>
@@ -293,7 +293,7 @@ function onUpdate() {
                     </div>
                     <div class="card-body p-0 px-2">
                         <figure class="p-0 py-0">
-                            <img src="${updateMovie.movieImg || updateMovie.defaultImg}"
+                            <img src="${updateMovie.movieImg || defaultImg}"
                                 alt="${updateMovie.movieName}">
 
                             <figcaption>
