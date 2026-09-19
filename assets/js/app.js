@@ -15,54 +15,48 @@ const addMovie = document.getElementById('addMovie')
 const updateMovieBtn = document.getElementById('updateMovieBtn')
 
 
-
 let movieArr = [
     {
         movieId: "1",
         movieName: "RRR",
-        movieImg: "https://www.impawards.com/intl/india/2022/posters/rrr.jpg",
+        movieImg: "http://www.impawards.com/intl/india/2022/posters/rrr.jpg",
         movieRating: 3.4,
         movieDescription: "RRR is an epic action drama about two revolutionaries who come together to fight against British rule. Their friendship and courage form the heart of this powerful story."
     },
-
     {
         movieId: "2",
         movieName: "Kantara",
-        movieImg: "https://www.impawards.com/intl/india/2022/posters/kantara.jpg",
+        movieImg: "https://m.media-amazon.com/images/M/MV5BY2VkZjk5ZjMtM2ExOS00ZDA1LTg1ZDEtYTliNGZiYTc4ZWZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         movieRating: 6.8,
-        movieDescription: "Kantara is a gripping story about a village, its traditions, and the deep connection between its people and the land. ."
+        movieDescription: "Kantara is a gripping story about a village, its traditions, and the deep connection between its people and the land."
     },
-
     {
         movieId: "3",
         movieName: "Vikram",
-        movieImg: "https://www.impawards.com/intl/india/2022/posters/vikram.jpg",
+        movieImg: "http://www.impawards.com/intl/india/2022/posters/vikram.jpg",
         movieRating: 5.4,
         movieDescription: "A mysterious investigation leads a special team into the dangerous world of drugs and organized crime. As the investigation continues, hidden identities and secrets begin to surface."
     },
-
     {
         movieId: "4",
         movieName: "Sita Ramam",
-        movieImg: "https://www.impawards.com/intl/india/2022/posters/sita_ramam.jpg",
+        movieImg: "https://m.media-amazon.com/images/M/MV5BYWE0NDNiNzEtNThmMi00NjZlLTk3NDAtYzIzOWNmNWQyYTI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         movieRating: 2.7,
-        movieDescription: "Sita Ramam is a beautiful romantic drama about Lieutenant Ram, an army officer who receives an unexpected letter from a woman named Sita. ."
+        movieDescription: "Sita Ramam is a beautiful romantic drama about Lieutenant Ram, an army officer who receives an unexpected letter from a woman named Sita."
     },
-
     {
         movieId: "5",
         movieName: "KGF: Chapter 1",
-        movieImg: "https://www.impawards.com/intl/india/2018/posters/kgf.jpg",
+        movieImg: "https://m.media-amazon.com/images/S/pv-target-images/f23937d50403e919d74012218f6fc22d79e905e26c97b196fcd3a3d0e56a9541.jpg",
         movieRating: 4.7,
         movieDescription: "Rocky is a young man who grows up in poverty but dreams of becoming the most powerful person in the world. His journey takes him into the dangerous Kolar Gold Fields, where he challenges a powerful criminal empire. With determination and courage, Rocky begins building his own reputation and fighting against the people who control the mines."
     },
-
     {
         movieId: "6",
         movieName: "Baahubali: The Beginning",
-        movieImg: "https://www.impawards.com/intl/india/2015/posters/baahubali_the_beginning.jpg",
+        movieImg: "https://m.media-amazon.com/images/M/MV5BM2YxZThhZmEtYzM0Yi00OWYxLWI4NGYtM2Y2ZDNmOGE0ZWQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         movieRating: 8.0,
-        movieDescription: "Baahubali follows Shivudu, a young man who grows up unaware of his royal heritage. After discovering the truth about his family"
+        movieDescription: "Baahubali follows Shivudu, a young man who grows up unaware of his royal heritage. After discovering the truth about his family."
     }
 ];
 

@@ -67,9 +67,9 @@ body::before{
     position: absolute;
     filter: blur(1.5px);
 }
-.movieCard{
+/* .movieCard{
     height: 420px;
-}
+} */
 
 .movieCard:hover{
     transform: scale(1.03);
@@ -87,7 +87,7 @@ body::before{
 }
 
 .movieCard img{
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
